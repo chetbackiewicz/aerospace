@@ -1,7 +1,7 @@
 #added to my ~/.config/aerospace/aerospace.toml config file
 
-# alt + "," = change orientation, v or h 
-# alt + "/" = change to accordion
+# alt + "," = enter accordion, then reorient v or h 
+# alt + "/" = enter normal new, then reorient v or h 
 # cmd/windows-key + "N" = new window 
 # alt + shift + "nvim-key" = move current tile in direction
 
@@ -154,12 +154,12 @@ alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 alt-shift-semicolon = 'mode service'
 
 [workspace-to-monitor-force-assignment]
-1 = ['main', 'secondary']
-2 = ['main', 'secondary']
-3 = ['main', 'secondary']
-4 = ['secondary', 'main']
-5 = ['secondary', 'main']
-6 = ['secondary', 'main']
+1 = ['main']
+2 = ['main']
+3 = ['main']
+4 = ['secondary']
+5 = ['secondary']
+6 = ['secondary']
 # Big Screans Go on Monitor
 'Browse' = ['secondary', 'main']
 'Terminal' = ['secondary', 'main']
