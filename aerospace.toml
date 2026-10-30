@@ -121,7 +121,7 @@ alt-3 = 'workspace 3'
 alt-4 = 'workspace 4'
 alt-5 = 'workspace 5'
 alt-6 = 'workspace 6'
-alt-b = 'workspace Browse'
+alt-b = 'workspace Browser'
 alt-e = 'workspace Editor'
 alt-m = 'workspace Music'
 alt-n = 'workspace Notes'
@@ -129,6 +129,7 @@ alt-t = 'workspace Terminal'
 alt-s = 'workspace Slack'
 alt-a = 'workspace AI'
 alt-v = 'workspace Video'
+alt-x = 'workspace Browser2'
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-1 = 'move-node-to-workspace 1'
 alt-shift-2 = 'move-node-to-workspace 2'
@@ -136,7 +137,7 @@ alt-shift-3 = 'move-node-to-workspace 3'
 alt-shift-4 = 'move-node-to-workspace 4'
 alt-shift-5 = 'move-node-to-workspace 5'
 alt-shift-6 = 'move-node-to-workspace 6'
-alt-shift-b = 'move-node-to-workspace Browse'
+alt-shift-b = 'move-node-to-workspace Browser'
 alt-shift-n = 'move-node-to-workspace Notes'
 alt-shift-t = 'move-node-to-workspace Terminal'
 alt-shift-m = 'move-node-to-workspace Music'
@@ -144,6 +145,7 @@ alt-shift-e = 'move-node-to-workspace Editor'
 alt-shift-s = 'move-node-to-workspace Slack'
 alt-shift-a = 'move-node-to-workspace AI'
 alt-shift-v = 'move-node-to-workspace Video'
+alt-shift-x = 'move-node-to-workspace Browser2'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'
@@ -161,7 +163,7 @@ alt-shift-semicolon = 'mode service'
 5 = ['secondary']
 6 = ['secondary']
 # Big Screans Go on Monitor
-'Browse' = ['secondary', 'main']
+'Browser' = ['secondary', 'main']
 'Terminal' = ['secondary', 'main']
 'Editor' = ['secondary', 'main']
 'Notes' = ['secondary', 'main']
@@ -170,6 +172,7 @@ alt-shift-semicolon = 'mode service'
 'Slack' = ['main', 'secondary']
 'Music' = ['main', 'secondary']
 'AI' = ['main', 'secondary']
+'Browser2' = ['main', 'secondary']
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 [mode.service.binding]
@@ -193,7 +196,7 @@ run = 'move-node-to-workspace Terminal'
 
 [[on-window-detected]]
 if.app-id = 'com.google.Chrome'
-run = 'move-node-to-workspace Browse'
+run = 'move-node-to-workspace Browser'
 
 [[on-window-detected]]
 if.app-id = 'com.anthropic.claudefordesktop'
@@ -216,5 +219,5 @@ if.app-id = 'com.apple.Notes'
 run = 'move-node-to-workspace Notes'
 
 [[on-window-detected]]
-if.app-id = 'com.microsoft.VSCode'
+if.app-id = 'com.github.githubapp'
 run = 'move-node-to-workspace Editor'
