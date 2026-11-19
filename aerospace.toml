@@ -123,6 +123,7 @@ alt-5 = 'workspace 5'
 alt-6 = 'workspace 6'
 alt-b = 'workspace Browser'
 alt-e = 'workspace Editor'
+alt-f = 'workspace Finder'
 alt-m = 'workspace Music'
 alt-n = 'workspace Notes'
 alt-t = 'workspace Terminal'
@@ -221,3 +222,7 @@ run = 'move-node-to-workspace Notes'
 [[on-window-detected]]
 if.app-id = 'com.github.githubapp'
 run = 'move-node-to-workspace Editor'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.finder'
+run = 'move-node-to-workspace Finder'
