@@ -122,7 +122,6 @@ alt-4 = 'workspace 4'
 alt-5 = 'workspace 5'
 alt-6 = 'workspace 6'
 alt-b = 'workspace Browser'
-alt-e = 'workspace Editor'
 alt-f = 'workspace Finder'
 alt-m = 'workspace Music'
 alt-n = 'workspace Notes'
@@ -142,7 +141,6 @@ alt-shift-b = 'move-node-to-workspace Browser'
 alt-shift-n = 'move-node-to-workspace Notes'
 alt-shift-t = 'move-node-to-workspace Terminal'
 alt-shift-m = 'move-node-to-workspace Music'
-alt-shift-e = 'move-node-to-workspace Editor'
 alt-shift-s = 'move-node-to-workspace Slack'
 alt-shift-a = 'move-node-to-workspace AI'
 alt-shift-v = 'move-node-to-workspace Video'
@@ -166,13 +164,12 @@ alt-shift-semicolon = 'mode service'
 # Big Screans Go on Monitor
 'Browser' = ['secondary', 'main']
 'Terminal' = ['secondary', 'main']
-'Editor' = ['secondary', 'main']
+'AI' = ['secondary', 'main']
 'Notes' = ['secondary', 'main']
 # Small Screens go on Main
 'Video' = ['main', 'secondary']
 'Slack' = ['main', 'secondary']
 'Music' = ['main', 'secondary']
-'AI' = ['main', 'secondary']
 'Browser2' = ['main', 'secondary']
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -221,7 +218,7 @@ run = 'move-node-to-workspace Notes'
 
 [[on-window-detected]]
 if.app-id = 'com.github.githubapp'
-run = 'move-node-to-workspace Editor'
+run = 'move-node-to-workspace AI'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.finder'
